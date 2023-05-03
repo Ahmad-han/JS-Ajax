@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Ajax</title>
+    <style>
+        .container {
+            width: 1320px;
+            margin: auto;
+            background-color: lightskyblue;
+            border-radius: 15px;
+        }
+        .container > ul {
+            width: 800px;
+            margin: auto;
+            list-style: none;
+        }
+        .container > ul > li {
+            text-align: center;
+            padding-bottom: 20px;
+            border: 1px solid black;
+        }
+        .button {
+            width: 250px;
+           margin: auto;
+        }
+        .button > button {
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+
+        .container2 {
+            width: 1320px;
+            margin: auto;
+            background-color: lightgray;
+            border-radius: 15px;
+        }
+        .container2 > div > ul {
+            width: 800px;
+            margin: 20px auto;
+            list-style: none;
+        }
+        .container2 > div > ul > li {
+            text-align: center;
+            padding-bottom: 20px;
+            border: 1px solid black;
+        }
+        .button2 {
+            width: 250px;
+           margin: auto;
+        }
+        .button2 > button {
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+        .container2 > .lists {
+            width: 900px;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <ul id="listElements"></ul>
+    <div class="button">
+        <button id="myButton" onclick="addPost()">
+            Показать посты
+        </button>
+    </div>
+</div>    
+
+<div class="container2">
+    <div class="lists">
+        <ul id="listOne"></ul>
+        <ul id="listTwo"></ul>
+    </div>
+
+    <div class="button2">
+        <button id="myButton2" onclick="getUser()">
+            Load User
+        </button>
+    </div>
+</div>
+
+
+
+    <script src="lesson-7.js"></script>
+</body>
+</html>
