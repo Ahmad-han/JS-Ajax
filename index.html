@@ -67,6 +67,47 @@
             margin: auto;
             justify-content: space-between;
         }
+
+        
+
+        .container3 {
+            width: 1320px;
+            margin: auto;
+            background-color: rebeccapurple;
+            border-radius: 15px;
+        }
+        .lists2 {
+            display: flex;
+        }
+        .container3 > div > ul {
+            width: 800px;
+            margin: 20px auto;
+            list-style: none;
+            color: #fff;
+            font-size: 20px;
+        }
+        .container3 > div > ul > li {
+            text-align: center;
+            padding-bottom: 20px;
+            border: 1px solid black;
+        }
+        .button3 {
+            width: 250px;
+           margin: auto;
+        }
+        .button3 > button {
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+        .container3 > .lists {
+            width: 900px;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+        }
     </style>
 </head>
 <body>
@@ -88,6 +129,19 @@
     <div class="button2">
         <button id="myButton2" onclick="getUser()">
             Load User
+        </button>
+    </div>
+</div>  
+
+<div class="container3">
+    <div class="lists2">
+        <ul id="listThree"></ul>
+        <ul id="listFour"></ul>
+    </div>
+
+    <div class="button3">
+        <button id="myButton3" onclick="getPersonData()">
+            Load Users
         </button>
     </div>
 </div>

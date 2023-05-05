@@ -129,3 +129,42 @@ const getEmail = fetch("https://jsonplaceholder.typicode.com/users/1")
 })
 .catch(error => console.log(error))
 };
+
+
+
+
+
+
+/* 2 Задание */
+
+
+const getPersonData = () => {
+    const getPersons = fetch("https://jsonplaceholder.typicode.com/users")
+.then(response => response.json())
+.then(user => {
+    const listThree = document.getElementById("listThree")
+    user.forEach(person => {
+    const listThreeElement = document.createElement("li")
+    listThreeElement.textContent = person.username
+    listThree.append(listThreeElement)
+    })
+})
+.catch(error => console.log(error))
+
+const getPersons2 = fetch("https://jsonplaceholder.typicode.com/users")
+.then(response => response.json())
+.then(user => {
+    const listFour = document.getElementById("listFour")
+    user.forEach(person => {
+    const listfourElement = document.createElement("li")
+    listfourElement.textContent = person.phone
+    listFour.append(listfourElement)
+    })
+})
+.catch(error => console.log(error))
+
+}
+
+
+
+
