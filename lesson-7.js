@@ -168,3 +168,30 @@ const getPersons2 = fetch("https://jsonplaceholder.typicode.com/users")
 
 
 
+// Задание 3 создание POST ajax
+
+
+
+const myPosts = {
+    "userId": 06,
+    "region": 95,
+    "city": "Grozny",
+    "name": "Ahmad Khan"
+}
+
+const getPost = () => {
+    const postFetch = fetch("https://jsonplaceholder.typicode.com/posts", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(myPosts),
+    }).then(response => {
+        if(!response.ok) {
+            throw new Error("response was not ok")
+        }
+        return response.json()
+    }).then(data => console.log(data))
+    .catch (error => console.log(error))
+}
+
